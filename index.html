@@ -11,6 +11,10 @@
     <script src="https://use.fontawesome.com/releases/v5.15.2/js/all.js" rel="stylesheet"></script>
     <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://m.w3newbie.com/you-tube.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
 </head>
 <body>
 <div id="video">
@@ -18,25 +22,31 @@
         <source src="media/home.mp4" type="video/mp4">
     </video>
 
-    <div class="content">
-        <div class="container-fluid">
-            <h1>Hello,</h1>
-            <h2>I'm Rebecca and I create</h2>
+    <div class="content d-flex flex-column align-items-start">
+        <div class="container-fluid mb-auto">
+            <h1 style="font-family: 'Roboto', sans-serif, light">Hello,</h1>
+            <h2 class="heading">I'm Rebecca and I create</h2>
             <nav class="navbar">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-chevron-right"></i> Websites</a>
+                        <a class="nav-link" href="websites.html"><i class="fas fa-chevron-right"></i> Websites</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-chevron-right"></i> Graphic Design</a>
+                        <a class="nav-link" href="graphicDesign.html"><i class="fas fa-chevron-right"></i> Graphic Design</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-chevron-right"></i> Animations</a>
+                        <a class="nav-link" href="animations.html"><i class="fas fa-chevron-right"></i> Animations</a>
                     </li>
                 </ul>
             </nav>
         </div>
+        <div class="container-fluid d-flex flex-column mb-5 socialM">
+            <a href="https://www.linkedin.com/in/rebecca-oberst-b8470214b/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram mt-2"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-deviantart mt-2"></i></a>
+        </div>
     </div>
+
 </div>
 </body>
 </html>

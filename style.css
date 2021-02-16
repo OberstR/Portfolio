@@ -1,15 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
 
 html, body {
     height: 100%;
     width: 100%;
-    font-family: 'Proxima Nova Lt', sans-serif;
+    font-family: 'Proxima Nova Lt', sans-serif !important;
     font-size: 14px;
     color: #e5e5e5;
     background-color: #010001;
 }
-
-
 
 #video{
     position: relative;
@@ -23,7 +21,7 @@ html, body {
 }
 
 #video .content{
-    background: rgba(0,0,0,0.2);
+    background: rgba(0,0,0,0.3);
     height: 100%;
     width: 100%;
     z-index: 20;
@@ -35,30 +33,32 @@ html, body {
 }
 
 #video .content h1{
-    font-weight: lighter;
+    font-weight: normal;
     font-size: 4vw;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #video .content h2{
-    font-weight: lighter;
-    font-size: 4vw;
+    font-weight: normal;
+    font-size: 3vw;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #video .nav-link{
     color: #e5e5e5;
-    font-size: 3vw;
-    padding: 2rem;
+    font-size: 2.5vw;
     transition: font-size 0.7s;
+    font-weight: lighter;
+    font-family: 'Roboto', sans-serif;
 }
 
-#video .nav-link:hover{
-    font-size: 4vw;
-    transition: font-size 0.7s;
-
+.socialM{
+    font-size: 20px;
 }
 
 svg{
     color: #bb2d3b;
+    height: 100%;
 }
 
 @media (max-width: 992px) {
@@ -72,7 +72,7 @@ svg{
         padding-bottom: 2rem;
     }
     #video .content{
-        background: rgba(0,0,0,0.2);
+        background: rgba(0,0,0,0.7);
         height: 100%;
         width: 100%;
         z-index: 20;
@@ -89,4 +89,43 @@ svg{
         transition: font-size 0.7s;
         padding-left: 0;
     }
+}
+
+@media (min-width: 992px) {
+    .navbar svg{
+        display: none;
+    }
+}
+
+@keyframes mymove {
+    from {
+        left:  100px;
+        height: 0px;
+        opacity: 0;
+        border-bottom:0px;
+    }
+    to {
+        height: auto;
+
+    }
+}
+.navbar-nav a.nav-link{
+
+    text-transform: uppercase;
+    padding: 0px;
+    padding-top: 2rem;
+}
+ul.navbar-nav li.nav-item{
+    margin: 0 20px;
+}
+ul.navbar-nav .nav-item:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 0;
+    transition: width .5s ease, background-color .5s ease;
+}
+.navbar-nav .nav-item:hover:after {
+    width: 100%;
+    background: #bb2d3b;
 }
